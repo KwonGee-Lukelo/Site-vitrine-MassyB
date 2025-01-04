@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital ,wght@0,200;0,300;0,500;0,700;0,900;1,200;1,300&display=swap");
+
+.poppins_extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/************************************/
+/************************************/
+/************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.hero-section {
+  background-image: url("../images/bg1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 650px;
+}
+
+.hero-section .content {
+  position: relative;
+  top: 75%;
+}
+
+.hero-section h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/**********************/
+/****FIN HERO-SECTION/
+
+/********************/
+
+/********************************************/
+/********************************************/
+/********************************************/
+/*********MEDIA QUERIES*/
+@media screen and (min-width: 375px) and (max-width: 667px) {
+  .hero-section {
+    height: 480px;
+  }
+  .hero-section .content {
+    top: 20%;
+  }
+}
+@media screen and (min-width: 393px) and (max-width: 852px) {
+  .hero-section {
+    height: 480px;
+  }
+  .hero-section .content {
+    top: 25%;
+  }
+}
+@media screen and (min-width: 575px) and (max-width: 862px) {
+  .hero-section {
+    height: 480px;
+  }
+  .hero-section .content {
+    top: 35%;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1180px) {
+  .hero-section {
+    height: 480px;
+  }
+  .hero-section .content {
+    position: absolute;
+    top: 15%;
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 1559px) and (max-width: 975px) {
+  .hero-section {
+    height: 380px;
+  }
+  .hero-section .content {
+    top: 95%;
+  }
+}
