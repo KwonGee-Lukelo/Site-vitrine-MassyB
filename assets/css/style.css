@@ -82,12 +82,25 @@ nav,
 .btn-primary:hover {
   background-color: var(--secondary-color);
 }
-
 /**********************/
 /****FIN HERO-SECTION/
 
-/********************/
 
+/********************/
+.exposition-section ul {
+  background-color: var(--neutre);
+  box-shadow: 3px 5px 5px 3px rgb(126, 125, 125);
+}
+
+.exposition-section .cat-expo-item-active {
+  background-color: var(--primary-color);
+  color: var(--neutre);
+}
+
+.cat-expo-item:hover {
+  background-color: var(--secondary-color);
+  color: var(--neutre);
+}
 /********************************************/
 /********************************************/
 /********************************************/
