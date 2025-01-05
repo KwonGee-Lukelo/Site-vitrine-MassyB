@@ -23,6 +23,13 @@
 /************************************/
 /************************************/
 /************************************/
+:root {
+  --primary-color: #00168e;
+  --secondary-color: #005aed;
+  --tertiary-color: #b5d0ff;
+  --light-color: #fff45b;
+  --neutre: #fff;
+}
 
 * {
   margin: 0;
@@ -33,6 +40,15 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+
+nav,
+.dropdown-menu {
+  background-color: var(--primary-color);
+}
+
+.dropdown-item:hover {
+  background-color: var(--secondary-color);
 }
 
 .hero-section {
@@ -49,9 +65,22 @@ body {
 }
 
 .hero-section h1 {
-  font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-style: normal;
+}
+
+.hero-section small {
+  font-weight: 200;
+}
+
+.hero-section .hero-section-span {
+  color: #e0d41f;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+}
+.btn-primary:hover {
+  background-color: var(--secondary-color);
 }
 
 /**********************/
