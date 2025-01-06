@@ -101,6 +101,23 @@ nav,
   background-color: var(--secondary-color);
   color: var(--neutre);
 }
+
+.exposition-section .card {
+  width: 270px;
+  box-shadow: 3px 5px 5px 3px rgb(126, 125, 125);
+  overflow: hidden;
+}
+.exposition-section .card img {
+  transition: transform 0.5s ease;
+}
+.exposition-section .card img:hover {
+  transform: scale(1.1);
+}
+
+.exposition-section .card .card-body span {
+  font-size: 2rem;
+  color: #e0d41f;
+}
 /********************************************/
 /********************************************/
 /********************************************/
