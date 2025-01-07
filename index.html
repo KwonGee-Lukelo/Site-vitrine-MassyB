@@ -207,13 +207,15 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Totam, at.
                   </p>
-                  <p class="card-text fw-semibold">Prix :<span>150$</span></p>
+                  <p class="card-text fw-semibold">
+                    Prix :<span id="prix">150$</span>
+                  </p>
 
                   <button
                     type="button"
                     class="btn btn-primary"
                     data-bs-toggle="modal"
-                    data-bs-target="#expoModal"
+                    data-bs-target="#orderModal"
                   >
                     Commandez
                   </button>
@@ -221,15 +223,16 @@
                   <!-- Ma modal -->
                   <div
                     class="modal fade"
-                    id="expoModal"
+                    id="orderModal"
                     tabindex="-1"
-                    aria-labelledby="modalExposition"
+                    role="dialog"
+                    aria-labelledby="orderModalLabel"
                     aria-hidden="true"
                   >
-                    <div class="modal-dialog">
+                    <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h2 class="modal-title fs-5" id="modalExposition">
+                          <h2 class="modal-title fs-5" id="orderModalLabel">
                             Passez votre commande
                           </h2>
                           <button
@@ -241,13 +244,8 @@
                         </div>
 
                         <div class="modal-body">
-                          <form
-                            action=""
-                            class="needs-validation"
-                            novalidate
-                            method="get"
-                          >
-                            <div class="mb-3">
+                          <form id="orderForm" clas="was-validated">
+                            <div class="form-group mb-3">
                               <label for="nom" class="form-label">Nom</label>
                               <input
                                 type="text"
@@ -260,7 +258,7 @@
                               </div>
                             </div>
 
-                            <div class="mb-3">
+                            <div class="form-group mb-3">
                               <label for="adresse" class="form-label"
                                 >Adresse</label
                               >
@@ -275,7 +273,7 @@
                               </div>
                             </div>
 
-                            <div class="mb-3">
+                            <div class="form-group mb-3">
                               <label for="marchandise" class="form-label"
                                 >Nom marchandise</label
                               >
@@ -290,7 +288,7 @@
                               </div>
                             </div>
 
-                            <div class="mb-3">
+                            <div class="form-group mb-3">
                               <label for="quantite" class="form-label"
                                 >Quantité</label
                               >
@@ -298,25 +296,24 @@
                                 type="number"
                                 id="quantite"
                                 class="form-control"
+                                min="1"
                                 required
                               />
                               <div class="invalid-feedback">
                                 Veuillez saisir la quantité
                               </div>
                             </div>
-
-                            <div>
-                              <button
-                                type="button"
-                                class="btn btn-primary btn-lg"
-                              >
-                                Commandez
-                              </button>
-                            </div>
                           </form>
                         </div>
 
                         <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="submitOrder"
+                          >
+                            Commander
+                          </button>
                           <button
                             type="button"
                             class="btn btn-danger"
@@ -337,6 +334,7 @@
     </main>
     <!-- Js Bootstrap -->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
     <!-- My Js -->
     <script src="assets/js/script.js"></script>
   </body>
