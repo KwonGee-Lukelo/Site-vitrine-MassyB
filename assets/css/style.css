@@ -103,7 +103,7 @@ nav,
 }
 
 .exposition-section .card {
-  width: 270px;
+  width: 250px;
   box-shadow: 3px 5px 5px 3px rgb(126, 125, 125);
   overflow: hidden;
 }
@@ -156,6 +156,13 @@ nav,
     margin-right: 50px;
   }
 }
+/* @media screen and (min-width: 820px) and (max-width: 3260px) {
+  .hero-section .content {
+    position: absolute;
+    top: 15%;
+    margin-right: 50px;
+  }
+} */
 @media screen and (min-width: 1559px) and (max-width: 975px) {
   .hero-section {
     height: 380px;
