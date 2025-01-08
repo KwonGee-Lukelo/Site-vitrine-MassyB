@@ -194,11 +194,10 @@
             <div class="col-lg-3 col-md-5">
               <div class="card">
                 <img
-                  src="./assets/images/meubles/chaiseBu.jpg"
+                  src="./assets/images/meubles/bureau/chaiseBu.jpg"
                   class="card-img-top"
                   alt=""
                 />
-                <hr />
 
                 <div class="card-body">
                   <h5 class="card-title fw-bold">Chaise de bureau</h5>
@@ -332,14 +331,13 @@
             <div class="col-lg-3 col-md-5">
               <div class="card">
                 <img
-                  src="./assets/images/meubles/chaiseBu.jpg"
+                  src="./assets/images/meubles/salon/FauteuilSalon.jpg"
                   class="card-img-top"
                   alt=""
                 />
-                <hr />
 
                 <div class="card-body">
-                  <h5 class="card-title fw-bold">Chaise de bureau</h5>
+                  <h5 class="card-title fw-bold">Fauteuil de salon</h5>
 
                   <p class="card-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -470,14 +468,13 @@
             <div class="col-lg-3 col-md-5">
               <div class="card">
                 <img
-                  src="./assets/images/meubles/chaiseBu.jpg"
+                  src="./assets/images/meubles/salle à manger/salleManger1.jpg"
                   class="card-img-top"
                   alt=""
                 />
-                <hr />
 
                 <div class="card-body">
-                  <h5 class="card-title fw-bold">Chaise de bureau</h5>
+                  <h5 class="card-title fw-bold">Salle à manger</h5>
 
                   <p class="card-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -608,14 +605,565 @@
             <div class="col-lg-3 col-md-5">
               <div class="card">
                 <img
-                  src="./assets/images/meubles/chaiseBu.jpg"
+                  src="./assets/images/meubles/exterieur/tableChaiseExt.jpg"
                   class="card-img-top"
                   alt=""
                 />
-                <hr />
 
                 <div class="card-body">
-                  <h5 class="card-title fw-bold">Chaise de bureau</h5>
+                  <h5 class="card-title fw-bold">Chaise d'exterieur</h5>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam, at.
+                  </p>
+                  <p class="card-text fw-semibold">
+                    Prix :<span id="prix">150$</span>
+                  </p>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal"
+                  >
+                    Commandez
+                  </button>
+
+                  <!-- Ma modal -->
+                  <div
+                    class="modal fade"
+                    id="orderModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="orderModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title fs-5" id="orderModalLabel">
+                            Passez votre commande
+                          </h2>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <div class="modal-body">
+                          <form id="orderForm" class="was-validated">
+                            <div class="form-group mb-3">
+                              <label for="nom" class="form-label">Nom</label>
+                              <input
+                                type="text"
+                                id="nom"
+                                class="form-control"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez saisir votre nom
+                              </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                              <label for="adresse" class="form-label"
+                                >Adresse</label
+                              >
+                              <input
+                                type="text"
+                                id="adresse"
+                                class="form-control"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez saisir votre adresse
+                              </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                              <label for="marchandise" class="form-label"
+                                >Nom marchandise</label
+                              >
+                              <input
+                                type="text"
+                                id="marchandise"
+                                class="form-control"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez saisir le nom de la marchandise
+                              </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                              <label for="quantite" class="form-label"
+                                >Quantité</label
+                              >
+                              <input
+                                type="number"
+                                id="quantite"
+                                class="form-control"
+                                min="1"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez saisir la quantité
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="submitOrder"
+                          >
+                            Commander
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-danger"
+                            data-bs-dismiss="modal"
+                          >
+                            Fermer
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row gy-5 gy-md-4 gy-sm-3 justify-content-md-around mt-4">
+            <div class="col-lg-3 col-md-5">
+              <div class="card">
+                <img
+                  src="./assets/images/meubles/exterieur/chaiseExt.jpg"
+                  class="card-img-top"
+                  alt=""
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Chaise d'exterieur</h5>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam, at.
+                  </p>
+                  <p class="card-text fw-semibold">
+                    Prix :<span id="prix">150$</span>
+                  </p>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal"
+                  >
+                    Commandez
+                  </button>
+
+                  <!-- Ma modal -->
+                  <div
+                    class="modal fade"
+                    id="orderModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="orderModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title fs-5" id="orderModalLabel">
+                            Passez votre commande
+                          </h2>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <div class="modal-body">
+                          <form id="orderForm" class="was-validated">
+                            <div class="form-group mb-3">
+                              <label for="nom" class="form-label">Nom</label>
+                              <input
+                                type="text"
+                                id="nom"
+                                class="form-control"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez saisir votre nom
+                              </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                              <label for="adresse" class="form-label"
+                                >Adresse</label
+                              >
+                              <input
+                                type="text"
+                                id="adresse"
+                                class="form-control"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez saisir votre adresse
+                              </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                              <label for="marchandise" class="form-label"
+                                >Nom marchandise</label
+                              >
+                              <input
+                                type="text"
+                                id="marchandise"
+                                class="form-control"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez saisir le nom de la marchandise
+                              </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                              <label for="quantite" class="form-label"
+                                >Quantité</label
+                              >
+                              <input
+                                type="number"
+                                id="quantite"
+                                class="form-control"
+                                min="1"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez saisir la quantité
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="submitOrder"
+                          >
+                            Commander
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-danger"
+                            data-bs-dismiss="modal"
+                          >
+                            Fermer
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-5">
+              <div class="card">
+                <img
+                  src="./assets/images/meubles/salle à manger/sallemanger3.jpg"
+                  class="card-img-top"
+                  alt=""
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">salle à manger</h5>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam, at.
+                  </p>
+                  <p class="card-text fw-semibold">
+                    Prix :<span id="prix">150$</span>
+                  </p>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal"
+                  >
+                    Commandez
+                  </button>
+
+                  <!-- Ma modal -->
+                  <div
+                    class="modal fade"
+                    id="orderModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="orderModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title fs-5" id="orderModalLabel">
+                            Passez votre commande
+                          </h2>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <div class="modal-body">
+                          <form id="orderForm" class="was-validated">
+                            <div class="form-group mb-3">
+                              <label for="nom" class="form-label">Nom</label>
+                              <input
+                                type="text"
+                                id="nom"
+                                class="form-control"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez saisir votre nom
+                              </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                              <label for="adresse" class="form-label"
+                                >Adresse</label
+                              >
+                              <input
+                                type="text"
+                                id="adresse"
+                                class="form-control"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez saisir votre adresse
+                              </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                              <label for="marchandise" class="form-label"
+                                >Nom marchandise</label
+                              >
+                              <input
+                                type="text"
+                                id="marchandise"
+                                class="form-control"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez saisir le nom de la marchandise
+                              </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                              <label for="quantite" class="form-label"
+                                >Quantité</label
+                              >
+                              <input
+                                type="number"
+                                id="quantite"
+                                class="form-control"
+                                min="1"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez saisir la quantité
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="submitOrder"
+                          >
+                            Commander
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-danger"
+                            data-bs-dismiss="modal"
+                          >
+                            Fermer
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-5">
+              <div class="card">
+                <img
+                  src="./assets/images/meubles/salon/tableTeleTableSalonVitrine.jpg"
+                  class="card-img-top"
+                  alt=""
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">
+                    Table télé, salon & vitrine
+                  </h5>
+
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Totam, at.
+                  </p>
+                  <p class="card-text fw-semibold">
+                    Prix :<span id="prix">150$</span>
+                  </p>
+
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#orderModal"
+                  >
+                    Commandez
+                  </button>
+
+                  <!-- Ma modal -->
+                  <div
+                    class="modal fade"
+                    id="orderModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="orderModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 class="modal-title fs-5" id="orderModalLabel">
+                            Passez votre commande
+                          </h2>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+
+                        <div class="modal-body">
+                          <form id="orderForm" class="was-validated">
+                            <div class="form-group mb-3">
+                              <label for="nom" class="form-label">Nom</label>
+                              <input
+                                type="text"
+                                id="nom"
+                                class="form-control"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez saisir votre nom
+                              </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                              <label for="adresse" class="form-label"
+                                >Adresse</label
+                              >
+                              <input
+                                type="text"
+                                id="adresse"
+                                class="form-control"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez saisir votre adresse
+                              </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                              <label for="marchandise" class="form-label"
+                                >Nom marchandise</label
+                              >
+                              <input
+                                type="text"
+                                id="marchandise"
+                                class="form-control"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez saisir le nom de la marchandise
+                              </div>
+                            </div>
+
+                            <div class="form-group mb-3">
+                              <label for="quantite" class="form-label"
+                                >Quantité</label
+                              >
+                              <input
+                                type="number"
+                                id="quantite"
+                                class="form-control"
+                                min="1"
+                                required
+                              />
+                              <div class="invalid-feedback">
+                                Veuillez saisir la quantité
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            id="submitOrder"
+                          >
+                            Commander
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-danger"
+                            data-bs-dismiss="modal"
+                          >
+                            Fermer
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-5">
+              <div class="card">
+                <img
+                  src="./assets/images/meubles/bureau/tableBureau.jpg"
+                  class="card-img-top"
+                  alt=""
+                />
+
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Table de bureau</h5>
 
                   <p class="card-text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
