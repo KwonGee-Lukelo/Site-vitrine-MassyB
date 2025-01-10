@@ -36,32 +36,30 @@ function filterPhotos(category) {
   const photos = document.querySelectorAll(".photo");
   const gallery = document.getElementById("photosgallery");
 
-  // photos.forEach((photo) => {
-  //   if (category === "categorie-meuble") {
-  //     photo.classList.remove("hidden");
-  //   } else if (photo.classList.contains(category)) {
-  //     photo.classList.remove("hidden");
-  //   } else {
-  //     photo.classList.add("hidden");
-  //   }
-  // });
+  photos.forEach((photo) => {
+    if (category === "categorie-meuble") {
+      photo.classList.remove("hidden");
+    } else if (photo.classList.contains(category)) {
+      photo.classList.remove("hidden");
+    } else {
+      photo.classList.add("hidden");
+    }
+  });
+}
 
-  if (category === "categorie-meuble") {
-    photos.forEach((photo) => {
-      photo.style.display = "block";
-      photo.classList.remove("single-colum");
-    });
-  } else {
-    photos.forEach((photo) => {
-      if (photo.classList.contains(category)) {
-        photo.style.display = "block";
-        photo.classList.add("single-colum");
-      } else {
-        photo.style.display = "none";
-        photo.classList.remove("single-colum");
-      }
-    });
-  }
+// BUTTON COMMANDE SECTION ESPOSITION
+const btnCommander = document.getElementById("btn-commande");
+
+btnCommander.addEventListener("click", ouvrirWhatsapp);
+
+function ouvrirWhatsapp() {
+  const message = `*COMMANDE* \n\nBonjour Monsieur \nJ'aimerais me renseigné par rapport à`;
+  const whatsappUrl = `https://wa.me/243981961965?text=${encodeURIComponent(
+    message
+  )}`;
+  window.open(whatsappUrl, "_blank");
+
+  console.log(btnCommander);
 }
 
 // // const btnCommand = document.getElementById("commandez");
