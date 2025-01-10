@@ -95,18 +95,23 @@ nav,
 .exposition-section .cat-expo-item-active {
   background-color: var(--primary-color);
   color: var(--neutre);
+  cursor: pointer;
 }
 
 .cat-expo-item:hover {
   background-color: var(--secondary-color);
   color: var(--neutre);
+  cursor: pointer;
 }
 
 .exposition-section .card {
-  width: 250px;
-  box-shadow: 3px 5px 5px 3px rgb(126, 125, 125);
+  width: 365px;
   overflow: hidden;
 }
+.exposition-section .card:hover {
+  box-shadow: 3px 5px 5px 3px rgb(126, 125, 125);
+}
+
 .exposition-section .card img {
   transition: transform 0.5s ease;
 }
@@ -119,8 +124,8 @@ nav,
   color: #e0d41f;
 }
 
-.exposition-section .expo {
-  visibility: hidden;
+.hidden {
+  display: none;
 }
 /********************************************/
 /********************************************/
@@ -149,6 +154,21 @@ nav,
   .hero-section .content {
     top: 35%;
   }
+
+  /* .exposition-section #photosgallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .exposition-section .photo {
+    flex: 1 1 1 30%;
+    margin: 2px;
+  }
+
+  .single-colum {
+    flex: 1 1 100%;
+  } */
 }
 @media screen and (min-width: 820px) and (max-width: 1180px) {
   .hero-section {
