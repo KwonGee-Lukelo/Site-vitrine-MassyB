@@ -127,6 +127,15 @@ nav,
 .hidden {
   display: none;
 }
+/**********************/
+/****FIN EXPOSITION-SECTION/
+
+
+/********************/
+.cta-section {
+  background-color: var(--primary-color);
+}
+
 /********************************************/
 /********************************************/
 /********************************************/
@@ -138,7 +147,13 @@ nav,
   .hero-section .content {
     top: 20%;
   }
+
+  /********************/
+  .cta-section .cta-section-des {
+    text-align: initial;
+  }
 }
+
 @media screen and (min-width: 393px) and (max-width: 852px) {
   .hero-section {
     height: 480px;
@@ -147,6 +162,7 @@ nav,
     top: 25%;
   }
 }
+
 @media screen and (min-width: 575px) and (max-width: 862px) {
   .hero-section {
     height: 480px;
@@ -154,22 +170,8 @@ nav,
   .hero-section .content {
     top: 35%;
   }
-
-  /* .exposition-section #photosgallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .exposition-section .photo {
-    flex: 1 1 1 30%;
-    margin: 2px;
-  }
-
-  .single-colum {
-    flex: 1 1 100%;
-  } */
 }
+
 @media screen and (min-width: 820px) and (max-width: 1180px) {
   .hero-section {
     height: 480px;
@@ -179,14 +181,25 @@ nav,
     top: 15%;
     margin-right: 50px;
   }
+
+  /********************/
+  .cta-section .cta-section-des {
+    text-align: initial;
+  }
 }
-/* @media screen and (min-width: 820px) and (max-width: 3260px) {
-  .hero-section .content {
+
+@media screen and (min-width: 820px) and (max-width: 3260px) {
+  /* .hero-section .content {
     position: absolute;
     top: 15%;
     margin-right: 50px;
+  } */
+  /********************/
+  .cta-section .cta-section-des {
+    text-align: left;
   }
-} */
+}
+
 @media screen and (min-width: 1559px) and (max-width: 975px) {
   .hero-section {
     height: 380px;
