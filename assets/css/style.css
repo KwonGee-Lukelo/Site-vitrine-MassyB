@@ -144,6 +144,48 @@ nav,
   width: 500px;
   height: auto;
 }
+/**********************/
+/****FIN TEMOIGNAGE-SECTION/
+
+
+/********************/
+.image-apropos {
+  position: relative;
+  display: inline-block;
+}
+.apropos-section .image-apropos::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background-color: var(--secondary-color);
+  width: 250px;
+  height: 370px;
+  z-index: -1;
+}
+
+.apropos-section i {
+  color: var(--neutre);
+  font-size: 2rem;
+  background-color: var(--secondary-color);
+  padding: 0.5em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.apropos-section i:hover {
+  color: var(--neutre);
+  background-color: var(--primary-color);
+}
+.apropos-section h2 {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.apropos-section span {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
 /********************************************/
 /********************************************/
 /********************************************/
