@@ -17,13 +17,22 @@
     <meta property="og:image" content="" />
     <meta property="og:type" content="website" />
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+    <!-- Splide css-->
+    <link rel="stylesheet" href="vendor/splidejs/splide.min.css" />
+    <link
+      rel="stylesheet"
+      href="vendor/splidejs/splide-extension-video.min.css"
+    />
+
     <!-- Bootstrap icon -->
     <link
       rel="stylesheet"
       href="vendor/bootstrap/bootstrap-icons/bootstrap-icons.min.css"
     />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
+
     <!-- My css -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Acceuil</title>
@@ -1471,7 +1480,52 @@
           </div>
         </div>
       </div>
+
+      <div class="temoignage-section my-4 py-5">
+        <div class="container">
+          <div class="mb-4 text-center">
+            <h1 class="">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </h1>
+
+            <small class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi qui
+              voluptates aspernatur explicabo necessitatibus ea, earum dolores
+              aperiam, rerum, nemo expedita quos provident similique nesciunt!
+            </small>
+          </div>
+
+          <div class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li
+                  class="splide__slide"
+                  data-splide-html-video="assets\videos\Kaaris_-_Le_prix_de_la_réussite__Clip_Officiel_(720p).mp4"
+                >
+                  <img src="assets/images/bg2.jpeg" />
+                </li>
+                <li
+                  class="splide__slide"
+                  data-splide-html-video="assets\videos\Samy_Palila_-__Malaika__clip_officiel_(720p).mp4"
+                >
+                  <img src="assets/images/bg2.jpeg" />
+                </li>
+                <li
+                  class="splide__slide"
+                  data-splide-html-video="assets\videos\Algorithmique__1_14__-_Un_algorithme_c_est_quoi_(0).mp4"
+                >
+                  <img src="assets/images/bg2.jpeg" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <!-- Splide js -->
+    <script src="vendor/splidejs/splide.min.js"></script>
+    <script src="vendor/splidejs/splide-extension-video.min.js"></script>
+
     <!-- Js Bootstrap -->
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 

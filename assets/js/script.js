@@ -62,6 +62,19 @@ function ouvrirWhatsapp() {
   console.log(btnCommander);
 }
 
+// SPLIDE JS
+/*var splide = new Splide(".splide", {
+  type: "loop",
+  perPage: 3,
+  focus: "center",
+  gap: "50px",
+});
+
+splide.mount();*/
+
+// SLIDE JS VIDEO
+new Splide(".splide").mount(window.splide.Extensions);
+
 // // const btnCommand = document.getElementById("commandez");
 // // let nomClient = document.getElementById("nom");
 // // let adresseClient = document.getElementById("adresse");
