@@ -74,13 +74,3 @@ splide.mount();*/
 
 // SLIDE JS VIDEO
 new Splide(".splide").mount(window.splide.Extensions);
-
-// // const btnCommand = document.getElementById("commandez");
-// // let nomClient = document.getElementById("nom");
-// // let adresseClient = document.getElementById("adresse");
-// // let nomMarchandise = document.getElementById("marchandise");
-// // let quantite = document.getElementById("quantite");
-
-// // btnCommand.addEventListener("click", Commande);
-
-// function Commande() {}

@@ -153,6 +153,7 @@ nav,
   position: relative;
   display: inline-block;
 }
+
 .apropos-section .image-apropos::before {
   content: "";
   position: absolute;
@@ -163,7 +164,10 @@ nav,
   height: 370px;
   z-index: -1;
 }
-
+.apropos-section .icone {
+  display: flex;
+  justify-content: center;
+}
 .apropos-section i {
   color: var(--neutre);
   font-size: 2rem;
@@ -171,6 +175,7 @@ nav,
   padding: 0.5em;
   border-radius: 50%;
   overflow: hidden;
+  /* margin: 0 2.5em; */
 }
 .apropos-section i:hover {
   color: var(--neutre);
@@ -178,11 +183,11 @@ nav,
 }
 .apropos-section h2 {
   font-weight: 700;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .apropos-section span {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   font-weight: bold;
 }
 
@@ -201,6 +206,10 @@ nav,
   /********************/
   .cta-section .cta-section-des {
     text-align: initial;
+  }
+
+  .apropos-section .image-apropos::before {
+    visibility: hidden;
   }
 }
 
@@ -235,6 +244,9 @@ nav,
   /********************/
   .cta-section .cta-section-des {
     text-align: initial;
+  }
+  .apropos-section .image-apropos::before {
+    visibility: hidden;
   }
 }
 
