@@ -65,7 +65,8 @@ nav,
 }
 
 .hero-section h1,
-.contact-section h1 {
+.contact-section h1,
+footer h1 {
   font-weight: 700;
 }
 
@@ -206,6 +207,20 @@ nav,
 }
 .contact-section .reseaux:hover {
   cursor: pointer;
+}
+/**********************/
+/****FIN FOOTER-SECTION/
+
+
+/********************/
+footer {
+  background-color: var(--secondary-color);
+  color: var(--neutre);
+}
+
+footer .copy {
+  background-color: var(--primary-color);
+  color: var(--neutre);
 }
 
 /********************************************/
