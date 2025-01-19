@@ -209,7 +209,7 @@ footer h1 {
   cursor: pointer;
 }
 /**********************/
-/****FIN FOOTER-SECTION/
+/****FIN CONTACT-SECTION/
 
 
 /********************/
@@ -222,7 +222,21 @@ footer .copy {
   background-color: var(--primary-color);
   color: var(--neutre);
 }
+/**********************/
+/****FIN CONTACT-SECTION/
 
+
+/**********
+PAGE MEUBLE SALON **********/
+.salon-hero-section {
+  background-image: url("../images/bg1.jpeg");
+  height: 250px;
+}
+
+.salon-hero-section .content {
+  position: relative;
+  top: 80%;
+}
 /********************************************/
 /********************************************/
 /********************************************/
