@@ -228,12 +228,14 @@ footer .copy {
 
 /**********
 PAGE MEUBLE SALON **********/
-.salon-hero-section {
+.salon-hero-section,
+.salle-hero-section {
   background-image: url("../images/bg1.jpeg");
   height: 250px;
 }
 
-.salon-hero-section .content {
+.salon-hero-section .content,
+.salle-hero-section .content {
   position: relative;
   top: 80%;
 }
