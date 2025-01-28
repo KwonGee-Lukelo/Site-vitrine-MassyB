@@ -42,6 +42,10 @@ body {
   font-style: normal;
 }
 
+nav .navbar-brand img {
+  height: 65px;
+}
+
 nav,
 .dropdown-menu {
   background-color: var(--primary-color);
