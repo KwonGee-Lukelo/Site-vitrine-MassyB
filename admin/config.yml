@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "articles"
+    label: "Articles"
+    folder: "content/articles"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nom de l'article", name: "title", widget:"string" }
+      - { label: "Image de l'article", name: "iitle", widget:"image" }
+      - {
+          label: "Prix",
+          name: "prix",
+          widget:"number",
+          value_type: "int",
+          suffix: "$",
+        }
