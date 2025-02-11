@@ -10,7 +10,7 @@ document.getElementById("submitOrder").addEventListener("click", function () {
     const price = document.getElementById("prix").textContent;
 
     const message = `*COMMANDE* \n\nNom du Client: ${clientName}\n\nNom de la Marchandise: ${productName}\n\nAdresse: ${clientAddress}\n\nQuantité: ${quantity}\n\nPrix: ${price} \l'unité`;
-    const whatsappUrl = `https://wa.me/243981961965?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/243972231759?text=${encodeURIComponent(
       message
     )}`;
 
@@ -54,7 +54,7 @@ btnCommander.addEventListener("click", ouvrirWhatsapp);
 
 function ouvrirWhatsapp() {
   const message = `*COMMANDE* \n\nBonjour Monsieur \nJ'aimerais me renseigné par rapport à`;
-  const whatsappUrl = `https://wa.me/243981961965?text=${encodeURIComponent(
+  const whatsappUrl = `https://wa.me/243972231759?text=${encodeURIComponent(
     message
   )}`;
   window.open(whatsappUrl, "_blank");
