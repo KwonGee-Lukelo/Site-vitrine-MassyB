@@ -74,3 +74,37 @@ splide.mount();*/
 
 // SLIDE JS VIDEO
 new Splide(".splide").mount(window.splide.Extensions);
+
+// Exemple de script pour charger les données du CMS
+fetch("/admin/config.yml")
+  .then((response) => response.json())
+  .then((data) => {
+    document.getElementById("section-title").innerText = data.section_title;
+    document.getElementById("section-description").innerText =
+      data.section_description;
+
+    const categoriesList = document.getElementById("categories-list");
+    data.categories.forEach((category) => {
+      const li = document.createElement("li");
+      li.className = "cat-expo-item p-lg-2 p-md-1 me-lg-5 me-md-3 me-sm-1";
+      li.innerText = category.category_name;
+      categoriesList.appendChild(li);
+    });
+
+    const productsList = document.getElementById("products-list");
+    data.products.forEach((product) => {
+      const productCard = `
+      <div class="col-lg-4 col-md-5 photo">
+        <div class="card">
+          <img src="${product.product_image}" class="card-img-top" alt="${product.product_title}" />
+          <div class="card-body">
+            <h5 class="card-title fw-bold">${product.product_title}</h5>
+            <p class="card-text fw-semibold">Prix :<span id="prix">${product.product_price}$</span></p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#orderModal">Commandez</button>
+          </div>
+        </div>
+      </div>
+    `;
+      productsList.innerHTML += productCard;
+    });
+  });

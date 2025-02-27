@@ -6,18 +6,54 @@ media_folder: "assets/images"
 public_folder: "/assets/images"
 
 collections:
-  - name: "articles"
-    label: "Articles"
-    folder: "content/articles"
+  - name: "exposition"
+    label: "Exposition"
+    folder: "content/exposition"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Nom de l'article", name: "title", widget:"string" }
-      - { label: "Image de l'article", name: "iitle", widget:"image" }
       - {
-          label: "Prix",
-          name: "prix",
-          widget:"number",
-          value_type: "int",
-          suffix: "$",
+          label: "Titre de la section",
+          name: "section_title",
+          widget: "string",
         }
+      - {
+          label: "Description de la section",
+          name: "section_description",
+          widget: "text",
+        }
+      - label: "Catégories"
+        name: "categories"
+        widget: "list"
+        fields:
+          - {
+              label: "Nom de la catégorie",
+              name: "category_name",
+              widget: "string",
+            }
+      - label: "Produits"
+        name: "products"
+        widget: "list"
+        fields:
+          - {
+              label: "Titre du produit",
+              name: "product_title",
+              widget: "string",
+            }
+          - {
+              label: "Image du produit",
+              name: "product_image",
+              widget: "image",
+            }
+          - {
+              label: "Prix du produit",
+              name: "product_price",
+              widget: "number",
+              value_type: "float",
+              suffix: "$",
+            }
+          - {
+              label: "Description du produit",
+              name: "product_description",
+              widget: "text",
+            }
